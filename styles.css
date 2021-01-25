@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgba(20, 20, 32, 0.7);
+
+    background-image: url("double-bubble-dark.png");
+}
+
+/* Navigation */
+.nav {
+    z-index: 20;
+    background-color: rgba(17, 14, 17, 0.7);
+    position: fixed;
+    padding: 5px;
+    width: 100vw;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 3em;
+    border-bottom: 5px solid  rgb(95, 4, 87);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(150, 120, 147);
+    border-bottom: 3px solid;
+}
+
+/* .nav-img {
+    z-index: 10;
+
+
+} */
+
+#nav-img {
+    position: fixed;
+    margin-top: 3px;
+    margin-left:0px;
+    z-index: 5;
+    width: 1300px;
+    height:30px;
+    right: 10px;
+}
