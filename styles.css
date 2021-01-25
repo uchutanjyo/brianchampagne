@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 html {
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: rgba(20, 20, 32, 0.7);
-
+    overflow: hidden;
     background-image: url("double-bubble-dark.png");
 }
 
@@ -18,17 +18,17 @@ body {
     background-color: rgba(17, 14, 17, 0.7);
     position: fixed;
     padding: 5px;
+    padding-left: 20px;
     width: 100vw;
-    font-family: 'Yusei Magic', sans-serif;
+    font-family: 'Ubuntu Mono', sans-serif;
     font-size: 3em;
     border-bottom: 5px solid  rgb(95, 4, 87);
     align-items: center;
     justify-content: center;
-
 }
 
 .nav a {
-    margin-right: 10px;
+    margin-right: 20px;
     text-decoration: none;
     color: #fff;
 }
@@ -38,11 +38,21 @@ a:hover {
     border-bottom: 3px solid;
 }
 
-/* .nav-img {
-    z-index: 10;
+#projects::before {
+    background: #fff;
+    content: "";
+    left: 5px;
+    bottom: 2px;
+    height: 10px;
+    position: absolute;
+    transition: 0.9s;
+    width: 10px;
+    border-radius: 5%;
+  }
 
-
-} */
+  #home:hover + #projects::before { 
+    transform: translateX(26px);
+}
 
 #nav-img {
     position: fixed;
@@ -53,3 +63,58 @@ a:hover {
     height:30px;
     right: 10px;
 }
+
+section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+.about {
+    width: 800px;
+    background-color: rgba(150, 120, 147, 0.7);
+    height: 70vh;
+    position: relative;
+    overflow-y:scroll;
+    padding: 30px 40px;
+    margin-top: -90px;
+    margin-bottom: 30px;
+    border-radius: 10%;
+    font-size: 1.5em;
+    word-spacing: 2px;
+}
+
+.circle1 {
+    text-align:center;
+    height: 100px;
+    width: 20vw;
+    border-radius: 80%;
+    background-color:rgba(172, 24, 157, 0.7);
+    z-index: 1;
+}
+
+h1 {
+   
+    
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+
+.footer {
+    position: fixed;
+    height: 2%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(95, 4, 87);
+  color: white;
+  text-align: center;
+}
+
