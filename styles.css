@@ -33,26 +33,6 @@ body {
     color: #fff;
 }
 
-a:hover {
-    color: rgb(150, 120, 147);
-    border-bottom: 3px solid;
-}
-
-#projects::before {
-    background: #fff;
-    content: "";
-    left: 5px;
-    bottom: 2px;
-    height: 10px;
-    position: absolute;
-    transition: 0.9s;
-    width: 10px;
-    border-radius: 5%;
-  }
-
-  #home:hover + #projects::before { 
-    transform: translateX(26px);
-}
 
 #nav-img {
     position: fixed;
@@ -64,6 +44,8 @@ a:hover {
     right: 10px;
 }
 
+/* Main */
+
 section {
     min-height: 90vh;
     display: flex;
@@ -73,7 +55,11 @@ section {
     
   }
 
-.about {
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 800px;
     background-color: rgba(150, 120, 147, 0.7);
     height: 70vh;
@@ -87,6 +73,10 @@ section {
     word-spacing: 2px;
 }
 
+.about {
+margin-top: -100px;
+}
+
 .circle1 {
     text-align:center;
     height: 100px;
@@ -97,16 +87,98 @@ section {
 }
 
 h1 {
+   font-size: 5em;
+    
+}
+
+
+/* Little Squares */
+
+
+a::before {
+    background: rgba(255, 255, 255, 0.6);
+    content: "";
+    left: 5px;
+    bottom: 2px;
+    height: 10px;
+    position: absolute;
+    transition: 0.7s;
+    width: 10px;
+    border-radius: 5%;
+  }
+
+
+ a:hover + a::before { 
+  transform: translateX(37px);
+}
+
+#about:hover + a::before { 
+  transform: translateX(150px);
+}
+
+#music:hover + a::before { 
+  transform: translateX(269px);
+}
+
+#gallery:hover + a::before { 
+  transform: translateX(400px);
+}
+
+#contact:hover + a::before { 
+  transform: translateX(540px);
+}
+
+  a:hover {
+      color:rgba(235, 229, 235, 0.7)
+  } 
+
+/* pic coontainer */
+#pics {
+background-color: rgba(17, 14, 17, 0.7);
+max-height: 60%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+
+}
+ /* Gallery buttons */
+
+ .buttons {
+  background: rgba(255, 255, 255, 0.3);
+  width: 300px;
+  margin-top: 40px;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+
+ }
+
+ #left {
+   margin-right: 50px;
+   border-radius: 50px;
+   font-size: 2em;
+
+
+ }
+
+   #right {
+    border-radius: 50px;
+    font-size: 2em;
    
-    
-}
 
-h2 {
-    text-align: center;
-    
-}
+   
 
-
+ }
+/* Footer */
 .footer {
     position: fixed;
     height: 2%;
